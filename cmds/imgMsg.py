@@ -1,8 +1,9 @@
 from utils import deb
 from utils import mediaPath
 from os.path import isdir
-def simgMsg():
-	deb( "simg B" )
+
+def imgMsg():
+	deb( "img B" )
 	ret = mediaPath()
 	if not ret:
 		ret = "NO MEDIA FOUND"
@@ -12,5 +13,5 @@ def simgMsg():
                 ret = "MEDIA IS NOT VALID"
                 deb( "simg E \n{\n%s\n}" %( ret ) )
                 return ret
-	deb( "simg E \n{%s\n}" %( ret ) )
+	deb( "img E \n{%s\n}" %( ret ) )
 	return ret
